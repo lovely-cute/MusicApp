@@ -1,0 +1,18 @@
+#header,#nav{
+    background:#b30000;
+    color: #fff;
+}
+#header #return{
+    color: #FFFFFF;
+}
+#header #nav{
+    width: 80%;
+    margin-left: 40px;
+    height: 42px;
+}
+#header #nav a{
+    height: 45px;
+}
+#header #nav #my{
+    color: #FFFFFF;
+}
