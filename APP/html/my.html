@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+</head>
+<body>
+
+    <div id="conent">
+        <!-- 主界面具体展示内容 -->    
+        <!-- 头像部分 -->
+        <div id="head">
+            <img src="../img/head.png" alt="" class="head_left">
+            <span class="title">小草的幽思</span>
+            <span class="stitle">动态6 &nbsp;|&nbsp; 关注8 &nbsp;|&nbsp; 粉丝15</span>
+            <span class="titile_right">随便听听</span>
+        </div>
+        <!-- /头像结束 -->    
+        <!-- 分类列表 -->
+        <ul class="mui-table-view" id="list">
+            <li class="mui-table-view-cell mui-media" id="form">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="../img/btn.png">
+                    <div class="mui-media-body" id="font_title">
+                        本地音乐
+                        <h5 class="explain">207首</h5>
+                    </div>
+                    <span class="btn_right"></span>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="form">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="../img/btn_01.png">
+                    <div class="mui-media-body" id="font_title">
+                        最近播放
+                        <h5 class="explain">共34首，8首可离线播放</h5>
+                        <span class="mui-icon mui-icon-forward right"></span>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="form">                       
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="../img/btn_02.png">
+                    <div class="mui-media-body" id="font_title">
+                        我的下载  
+                        <h5 class="explain">一首</h5>
+                        <span class="mui-icon mui-icon-forward right"></span>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="form_1">
+                <div class="header-title">
+                    <span class="head_title">自建歌单</span>
+                    <h5 class="mui-icon mui-icon-plusempty head_title_right">&nbsp新建</h5>
+                </div>
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="../img/btn_04.png">
+                    <div class="mui-media-body" id="font_title_1">
+                        我喜欢单曲 
+                        <span class="mui-icon mui-icon-forward right"></span>
+                        <h5 class="explain">0首</h5>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="form_1">
+                <div class="header-title">
+                    <span class="head_title">我的收藏</span>
+                    <h5 class="head_title_right">
+                        歌单 &nbsp;|&nbsp; 专辑 &nbsp;|&nbsp; 歌手 
+                    </h5>
+                </div>
+                <span class="sbtn"></span>
+                <span class="sbtn_1">碰到喜欢的内容，收藏一下就不会丢失啦</span>
+            </li>
+        </ul>
+        <!-- /分类列表 -->
+        <!-- 底部内容 -->
+        <div id="footer">
+            <div class="footer_left">
+               <img src="../img/head_01.png" alt="">
+               <span>不该（with  AMEI）</span>
+               <h5>周杰伦</h5> 
+            </div>
+            <div class="footer_right">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- /底部内容 -->
+    </div>
+<script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+mui.init()
+</script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/music.css">
+    <link rel="stylesheet" href="../css/mui.css">
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        mui.init()
+    </script>
+</head>
+<body>
+    <!-- 主界面不动、菜单移动 -->
+    <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+        <!-- 主页面容器 -->
+        <div class="mui-inner-wrap">
+            <!-- 主页面标题 -->
+            <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+            <h1 class="mui-title">标题</h1>
+            </header>
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll" id="music_conent">
+                    <!-- 主界面具体展示内容 -->
+                    <!-- 头部标题 -->
+                    <nav class="mui-bar-tab" id="title_music">
+                        <a class="mui-tab-item mui-active" href="#page1">
+                            <span class="mui-tab-label">热门推荐</span>
+                        </a>
+                        <a class="mui-tab-item" href="#page2">
+                            <span class="mui-tab-label">榜单</span>
+                        </a>
+                        <a class="mui-tab-item" href="#page3">
+                            <span class="mui-tab-label">歌单</span>
+                        </a>
+                        <a class="mui-tab-item" href="#page4">
+                            <span class="mui-tab-label">电台</span>
+                        </a>
+                    </nav>
+                    <div id="footer">
+                        <div id="footer_left">
+                           <img src="../img/head_01.png" alt="">
+                           <span>不该（with  AMEI）</span>
+                           <h5>周杰伦</h5> 
+                        </div>
+                        <div id="footer_right">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- /头部标题 -->
+                    <!-- 主要内容 -->
+                    <div class="mui-content" id="music_conent1">
+                        <!-- 第一个页面的内容 -->
+                        <div id="page1" class="mui-control-content mui-active">
+                            <div id="music_img">
+                                <img src="../img/List.png" alt="">
+                            </div>
+                            <ul id="button_list">
+                            	<li>
+                                    <img src="../img/list_02.png" alt="">
+                                    <span>每日歌曲推荐</span>
+                                </li>
+                            	<li>
+                                    <img src="../img/list_03.png" alt="">
+                                    <span>歌手</span>
+                                </li>
+                            	<li>
+                                    <img src="../img/list_04.png" alt="">
+                                    <span>歌曲分类</span>
+                                </li>
+                            </ul>
+                            <div id="sheet">
+                                <div class="sheet_title">
+                                    <p><i class="title_one"></i>推荐歌单</p>
+                                    <p class="mui-icon mui-icon-arrowright mui-right">更多</p>
+                                </div>
+                                <ul class="sheet_img">
+                                	<li class="img_one">
+                                        <img src="../img/list_06.jpg" alt="">
+                                        <span>苏打绿陪你一起走过</span><span>在每一个难忘的瞬间</span>
+                                    </li>
+                                	<li class="img_one">
+                                        <img src="../img/list_07.jpg" alt="">
+                                        <span>话语一首一句虐心词</span><span>心灵的忧伤</span>
+                                    </li>
+                                	<li class="img_one">
+                                        <img src="../img/list_08.jpg" alt="">
+                                        <span>感动就在一瞬间，那些</span><span>难以忘怀的歌曲</span>
+                                    </li>
+                                	<li class="img_two">
+                                        <img src="../img/list_09.jpg" alt="">
+                                    </li>
+                                	<li class="img_two">
+                                        <img src="../img/list_10.jpg" alt="">
+                                    </li>
+                                	<li class="img_two">
+                                        <img src="../img/list_11.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /第一个页面的内容 -->
+                            
+                        <!-- 第二个页面的内容 -->
+                        <div id="page2" class="mui-control-content">
+                            <ul id="hot_title">
+                               <li class="hot_title1">
+                               	<span>全部</span>
+                               </li>
+                               <li class="hot_title2">
+                               	<span>最热</span>
+                               	<span>|</span>
+                               	<span>最新</span>
+                               </li> 
+                            </ul>
+                            <div id="hot_list">
+                            	<ul class="hot_img">
+                            		<li>
+                                        <img src="../img/hot_02.jpg" alt="">
+                                        <i></i>
+                                        <span>执子之手，与子相守</span>
+                                        <span>by 陌咩咩</span>
+                                    </li>
+                            		<li>
+                                        <img src="../img/hot_03.jpg" alt="">
+                                        <i></i>
+                                        <span>跨越国界，感受异域歌声</span>
+                                        <span>by 欧美老腊肉</span>
+                                    </li>
+                            		<li>
+                                        <img src="../img/hot_04.jpg" alt="">
+                                        <i></i>
+                                        <span>歌予岁月留年,繁花落尽</span>
+                                        <span>by 温暖的心</span>                                        
+                                    </li>
+                            		<li>
+                                        <img src="../img/hot_05.jpg" alt="">
+                                        <i></i>
+                                        <span>如果失恋有解药</span>
+                                        <span>by 来日方长</span>
+                                    </li>
+                            		<li>
+                                        <img src="../img/hot_06.jpg" alt="">
+                                    </li>
+                            		<li>
+                                        <img src="../img/hot_07.jpg" alt="">
+                                    </li>
+                            	</ul>
+                                <div id="footer1">
+                                    <div id="footer_left">
+                                       <img src="../img/head_01.png" alt="">
+                                       <span>不该（with  AMEI）</span>
+                                       <h5>周杰伦</h5> 
+                                    </div>
+                                    <div id="footer_right">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /第二个页面的内容 -->
+                        
+                        <!-- 第三个页面的内容 -->
+                        <div id="page3" class="mui-control-content">
+                            <ul id="song">
+                            	<li id="song_list" class="mui-navigate-right">
+                                    <img src="../img/song.jpg" alt="">
+                                    <span>新歌榜</span>
+                                    <p><i>1</i>告白气球—周杰伦</p>
+                                    <p><i>2</i>天若有情—A-Lin</p>
+                                    <p><i>3</i>July—吴亦凡</p>
+                                </li>
+                                <li id="song_list" class="mui-navigate-right">
+                                    <img src="../img/song_01.jpg" alt="">
+                                    <span>热歌榜</span>
+                                    <p><i>1</i>告白气球—周杰伦</p>
+                                    <p><i>2</i>天若有情—A-Lin</p>
+                                    <p><i>3</i>July—吴亦凡</p>
+                                </li>
+                                <li class="mui-navigate-right" id="song_list">
+                                    <img src="../img/song_02.jpg" alt="">
+                                    <span>华语金曲榜</span>
+                                    <p><i>1</i>告白气球—周杰伦</p>
+                                    <p><i>2</i>天若有情—A-Lin</p>
+                                    <p><i>3</i>July—吴亦凡</p>
+                                </li>
+                                <li class="mui-navigate-right" id="song_list">
+                                    <img src="../img/song_03.jpg" alt="">
+                                    <span>影视金曲榜</span>
+                                    <p><i>1</i>告白气球—周杰伦</p>
+                                    <p><i>2</i>天若有情—A-Lin</p>
+                                    <p><i>3</i>July—吴亦凡</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /第三个页面的内容 -->
+                        
+                        <!-- 第四个页面的内容 -->
+                        <div id="page4" class="mui-control-content">
+                            <div id="radio">
+                                <ul class="radio_form">
+                                	<li>
+                                        <img src="../img/radio_01.png" >
+                                        <span>欢乐颂电台</span>
+                                        <span>当前热度12.3万</span>
+                                    </li>
+                                	<li>
+                                        <img src="../img/radio.png" >
+                                        <span>私人电台&nbsp;</span>
+                                        <span>当前热度5.4万</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul id="hot_title" class="hot_title">
+                               <li class="hot_title1">
+                               	<span>推荐</span>
+                               </li> 
+                            </ul>
+                            <ul id="radio_img">
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="../img/radio_02.jpg">
+                                        <div class="mui-media-body">
+                                            轻音乐
+                                            <p class='mui-ellipsis'>当前热度4.3万</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="../img/radio_03.jpg">
+                                        <div class="mui-media-body">
+                                            新歌
+                                            <p class='mui-ellipsis'>当前热度6.9万</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="../img/radio_04.jpg">
+                                        <div class="mui-media-body">
+                                            工作学习
+                                            <p class='mui-ellipsis'>当前热度3.6万</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="../img/radio_05.jpg">
+                                        <div class="mui-media-body">
+                                            咖啡伴侣
+                                            <p class='mui-ellipsis'>当前热度5.5万</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /第四个页面的内容 -->                        
+                    </div>
+                    <!-- /主要内容 -->
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
