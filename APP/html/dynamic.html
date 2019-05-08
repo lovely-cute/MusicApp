@@ -5,9 +5,12 @@
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../lib/mui-master/dist/css/index.css">
     <link rel="stylesheet" href="../css/dynamic.css">
-    <link rel="stylesheet" type="text/css" href="../lib/mui-master/dist/css/mui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        mui.init()
+    </script>
 </head>
 <body>
     <!-- 主界面菜单同时移动 -->
@@ -15,51 +18,62 @@
     	<div class="mui-off-canvas-wrap mui-draggable">
     		<!-- 主页面容器 -->
     		<div class="mui-inner-wrap">
-    			<!-- 菜单容器 -->
-    			<aside class="mui-off-canvas-left" id="offCanvasSide">
-    				<div class="mui-scroll-wrapper">
-    					<div class="mui-scroll">
-    						<!-- 菜单具体展示内容 -->
-    						
-    					</div>
-    				</div>
-    			</aside>
     			<!-- 主页面标题 -->
-    			<header class="mui-bar mui-bar-nav">
-    				<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
-    				<h1 class="mui-title">标题</h1>
-    			</header>
-    			<nav class="mui-bar mui-bar-tab">
-    				<a class="mui-tab-item mui-active">
-    					<span class="mui-icon mui-icon-home"></span>
-    					<span class="mui-tab-label">首页</span>
-    				</a>
-    				<a class="mui-tab-item">
-    					<span class="mui-icon mui-icon-phone"></span>
-    					<span class="mui-tab-label">电话</span>
-    				</a>
-    				<a class="mui-tab-item">
-    					<span class="mui-icon mui-icon-email"></span>
-    					<span class="mui-tab-label">邮件</span>
-    				</a>
-    				<a class="mui-tab-item">
-    					<span class="mui-icon mui-icon-gear"></span>
-    					<span class="mui-tab-label">设置</span>
-    				</a>
-    			</nav>
     			<!-- 主页面内容容器 -->
     			<div class="mui-content mui-scroll-wrapper">
     				<div class="mui-scroll">
     					<!-- 主界面具体展示内容 -->
-    					
+                        <div id="dynamic">
+                            <div id="footer">
+                                <div id="footer_left">
+                                   <img src="../img/head_01.png" alt="">
+                                   <span>不该（with  AMEI）</span>
+                                   <h5>周杰伦</h5> 
+                                </div>
+                                <div id="footer_right">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <img src="../img/dynamic.jpg" alt="" class="dynamic_img">
+                            <h1 class="word_left">热门话题</h1>
+                            <span class="mui-icon mui-icon-arrowright mui-right" id="word_right">更多</span>
+                            <ul class="dynamic_img1">
+                                <li>
+                                    <img src="../img/dynamic_01.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="../img/dynamic_02.jpg" alt="">
+                                </li>
+                            </ul>
+                            <div class="dynamic_word">
+                                <div class="dynamic_title">
+                                    <span>欢乐颂音乐带你发现世界</span><br>
+                                    <span>11-29</span>
+                                    <button type="button" id="btn">+关注</button>
+                                </div>
+                                <div class="title_word">
+                                    <p>今天是钟汉良欧巴的生日！想不起来是什么时候开始关注他的作品， 
+                                    不例外的从电视剧电影里认识他，从而了解原来他还是歌手，并且获得不少奖项！</p>
+                                    <p>唱跳俱佳，影视双栖，用对演艺事业的不懈追求书写小太阳的耀眼荣光</p>
+                                    <button type="button" class="btn">#手拉手一起做歌单</button>
+                                </div>
+                                <ul class="title_img">
+                                	<li>
+                                        <img src="../img/dynamic_04.jpg" alt="">
+                                    </li>
+                                	<li>
+                                        <img src="../img/dynamic_05.jpg" alt="">
+                                        <img src="../img/dynamic_06.jpg" >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
     				</div>
     			</div>
-    	   	 <div class="mui-off-canvas-backdrop"></div>
     		</div>
     	</div>
-<script src="../lib/mui-master/dist/js/mui.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-mui.init()
-</script>
+
 </body>
 </html>
