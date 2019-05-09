@@ -61,13 +61,13 @@
 	            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"
 	             href="#offCanvasSide" id="return"></a>
 	            <nav class="mui-bar mui-bar-tab" id="nav">
-	                <a class="mui-tab-item mui-active" href="my.html">
+	                <a class="mui-tab-item mui-active" id="a1">
 	                    <span class="mui-tab-label">我的</span>
 	                </a>
-	                <a class="mui-tab-item" href="music.html">
+	                <a class="mui-tab-item" id="a2">
 	                    <span class="mui-tab-label">音乐</span>
 	                </a>
-	                <a class="mui-tab-item" href="dynamic.html">
+	                <a class="mui-tab-item" id="a3">
 	                    <span class="mui-tab-label">动态</span>
 	                </a>                    
 	            </nav>
@@ -77,36 +77,58 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript">
-mui.plusReady(function(){
-    var pages = ["my.html","music.html","dynamic.html"];
-    var arr = document.getElementsByClassName("mui-tab-item")
-    var styles = {
-        top:"45px",
-    }
-    var pageArr = [];
-    var slef = plus.webview.currentWebview();
-    for(var i=0; i<arr.length; i++){
-        // 有几个选项卡，需要创建几个子页面
-        var page = plus.webview.create(pages[i],pages[i],styles);
-        pageArr.push(page);
-        !function(i){
-            arr[i].addEventListener("tap",function(){
-                // 让当前页面(i)显示，不是当前页面隐藏
-                for(var j=0; j<pageArr.length; j++){
-                    if(j!=i) pageArr[j].hide();
-                    else pageArr[j].show();
-                }
-                /* 让新创建的webview，追加合并到当前的窗口上。合并成一个窗口。
-                 * 目的：将父子窗口合并成一个页面，实现同开同关的效果。 避免点击返回安监室，子页面先关闭，而父页面的头部和尾部没有关闭的BUG。
-                 */
-                slef.append(pageArr[i]);
-            })
-        }(i);
-    }
-    // 默认触发第0个选项卡的tap事件。
-    mui.trigger(arr[0],"tap");
-});
-mui.init()
-</script>
+<script type="text/javascript" charset="utf-8">
+	  	mui.init({
+				    subpages:[//先加载首页
+				    	{
+					      url:'my.html',
+					      id:'a1',
+					      styles:{
+					      	top:'45px',
+		        			bottom:'0'
+					      }
+					    }
+				   		
+				    ],
+				    preloadPages:[//缓存其他页面
+					    {
+					      url:'music.html',
+					      id:'a2',
+					      styles:{
+					      	top:'45px',
+					      	bottom:'0'
+					      }
+					    },
+					    {
+					      url:'dynamic.html',
+					      id:'a3',
+					      styles:{
+					      	top:'45px',
+					      	bottom:'0'
+					      }
+					    }
+				 	]
+				    
+				});
+			mui.plusReady(function(){ 
+				// 获取所有Webview窗口
+				// var winAll=plus.webview.all();//获取所有窗体
+				var a1,a2,a3
+				mui("#nav").on("tap","#a1",function(){//点击触发 
+					a1=plus.webview.getWebviewById("a1");
+					a1.show()
+					a2.hide()//这一步必须有
+					a3.hide()//这一步必须有
+				})
+				mui("#nav").on("tap","#a2",function(){//点击触发
+					a2=plus.webview.getWebviewById("a2");
+					a2.show()
+				})
+				mui("#nav").on("tap","#a3",function(){//点击触发
+					a3=plus.webview.getWebviewById("a3");
+					a3.show()
+					
+				})
+			});
+	</script>
 </html>

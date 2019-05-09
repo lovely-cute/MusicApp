@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>本地歌曲</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/loca.css"/>
+    <link href="../css/mui.css" rel="stylesheet" />
+    <script src="../js/mui.js"></script>
+    <script type="text/javascript">
+        mui.init()
+    </script>
+</head>
+
+<body>
+    <!-- 主界面菜单同时移动 -->
+    <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <!-- 主页面容器 -->
+        <div class="mui-inner-wrap">
+            <!-- 菜单容器 -->
+            
+            <!-- 主页面标题 -->
+            <header class="mui-bar mui-bar-nav" id="loca_header">
+                <a class="mui-icon mui-icon-back" id="loca_header1">
+                    <span>本地歌曲</span>
+                </a>
+                <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
+                <a class="mui-icon mui-icon-search mui-pull-right" id="loca_header2"></a>
+                
+            </header>
+            <!-- 主页面内容容器 -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll" id="loca_conent">
+                    <!-- 主界面具体展示内容 -->
+                    <!-- 头部标题 -->
+                    <nav class="mui-bar-tab" id="title_loca">
+                        <a class="mui-tab-item mui-active" href="#page1">
+                            <span class="mui-tab-label">歌曲</span>
+                        </a>
+                        <a class="mui-tab-item" href="#page2">
+                            <span class="mui-tab-label">文件夹</span>
+                        </a>
+                        <a class="mui-tab-item" href="#page3">
+                            <span class="mui-tab-label">歌手</span>
+                        </a>
+                        <a class="mui-tab-item" href="#page4">
+                            <span class="mui-tab-label">专辑</span>
+                        </a>
+                    </nav>
+                    <div id="footer">
+                        <div id="footer_left">
+                           <img src="../img/head_01.png" alt="">
+                           <span>不该（with  AMEI）</span>
+                           <h5>周杰伦</h5> 
+                        </div>
+                        <div id="footer_right">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- /头部标题 -->
+                    <!-- 主要内容 -->
+                    <div class="mui-content" id="loca_conent1">
+                        <!-- 第一个页面的内容 -->
+                        <div id="page1" class="mui-control-content mui-active">
+                            <div class="loca_word">
+                                <span>随机播放全部</span>
+                                <span>批量管理</span>
+                            </div>
+                            <ul class="loca_list">
+                            	<li class="loca-active">
+                                    <p style="font-size: 18px; color: #bf2d2c;">A</p>
+                                    <span>爱火花</span>
+                                    <p>周笔畅-我是歌手第二季 第六期</p>
+                                </li>
+                            	<li>
+                                    <span>爱人动物</span>
+                                    <p>苏打绿-陪我歌唱</p>
+                                </li>
+                            	<li>
+                                    <span>爱人动物</span>
+                                    <p>苏打绿-陪我歌唱</p>
+                                </li>
+                            	<li>
+                                    <span>爱人动物</span>
+                                    <p>苏打绿-陪我歌唱</p>
+                                </li>
+                            	<li>
+                                    <span>爱人动物</span>
+                                    <p>苏打绿-陪我歌唱</p>
+                                </li>
+                            	<li>
+                                    <p style="font-size: 18px; color: #bf2d2c;">B</p>
+                                    <span>被雨伤透</span>
+                                    <p>苏打绿-小宇宙</p>
+                                </li>
+                            	<li>
+                                    <span>被雨伤透</span>
+                                    <p>苏打绿-小宇宙</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /第一个页面的内容 -->
+                            
+                        <!-- 第二个页面的内容 -->
+                        <div id="page2" class="mui-control-content">
+                            <ul class="loca_list2">
+                            	<li>
+                                    <span>我的下载</span>
+                                    <p>我的下载 12首/storage/sdcad1/i音乐/</p>
+                                </li>
+                                <li>
+                                    <span>录音</span>
+                                    <p>我的下载 12首/storage/sdcad1/i音乐/</p>
+                                </li>
+                                <li>
+                                    <span>song</span>
+                                    <p>我的下载 12首/storage/sdcad1/i音乐/</p>
+                                </li>
+                                <li>
+                                    <span>12530</span>
+                                    <p>我的下载 12首/storage/sdcad1/i音乐/</p>
+                                </li>
+                                <li>
+                                    <span>audios</span>
+                                    <p>我的下载 12首/storage/sdcad1/i音乐/</p>
+                                </li>
+                            </ul>
+                            <div class="loca_footer">
+                                <p>五个文件夹</p>
+                            </div>
+                        </div>
+                        <!-- /第二个页面的内容 -->
+                        
+                        <!-- 第三个页面的内容 -->
+                        <div id="page3" class="mui-control-content">
+                            <ul id="loca_list3">
+                            	<li>
+                                    <img src="../img/loca_1.jpg" alt="">
+                                    <span>陈奕迅</span>
+                                    <p>3首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_2.jpg" alt="">
+                                    <span>苏打绿</span>
+                                    <p>132首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_3.jpg" alt="">
+                                    <span>王力宏</span>
+                                    <p>7首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_4.jpg" alt="">
+                                    <span>张震岳</span>
+                                    <p>1首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_5.jpg" alt="">
+                                    <span>张靓颖</span>
+                                    <p>3首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_6.jpg" alt="">
+                                    <span>张杰</span>
+                                    <p>2首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_7.jpg" alt="">
+                                    <span>TFbody</span>
+                                    <p>4首</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /第三个页面的内容 -->
+                        
+                        <!-- 第四个页面的内容 -->
+                        <div id="page4" class="mui-control-content">
+                            <ul id="loca_list3">
+                            	<li>
+                                    <img src="../img/loca_8.jpg" alt="">
+                                    <span>Blive In Music </span>
+                                    <p>2首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_9.jpg" alt="">
+                                    <span>迟到千年</span>
+                                    <p>2首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_10.jpg" alt="">
+                                    <span>春 日光 </span>
+                                    <p>9首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_11.jpg" alt="">
+                                    <span>单曲-不甘寂寞</span>
+                                    <p>1首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_12.jpg" alt="">
+                                    <span>冬 未了 /span>
+                                    <p>12首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_13.jpg" alt="">
+                                    <span>十年一刻</span>
+                                    <p> 10首</p>
+                                </li>
+                                <li>
+                                    <img src="../img/loca_13.jpg" alt="">
+                                    <span>无与伦比的美丽</span>
+                                    <p>10首</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /第四个页面的内容 -->                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
