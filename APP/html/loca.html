@@ -9,6 +9,11 @@
     <link href="../css/mui.css" rel="stylesheet" />
     <script src="../js/mui.js"></script>
     <script type="text/javascript">
+        mui(document).on('tap', 'a', function() {
+            var a = document.createElement('a');
+            a = this.cloneNode(true);
+            a.click();
+        })
         mui.init()
     </script>
 </head>
@@ -23,7 +28,7 @@
             
             <!-- 主页面标题 -->
             <header class="mui-bar mui-bar-nav" id="loca_header">
-                <a class="mui-icon mui-icon-back" id="loca_header1">
+                <a class="mui-icon mui-icon-back" id="loca_header1" href="index.html">
                     <span>本地歌曲</span>
                 </a>
                 <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>

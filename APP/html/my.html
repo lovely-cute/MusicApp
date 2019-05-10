@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/index.css"/>
     <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-2.2.4.min%20.js"></script>
 </head>
 <body>
-
     <div id="conent">
         <!-- 主界面具体展示内容 -->    
         <!-- 头像部分 -->
@@ -33,7 +34,7 @@
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media" id="form">
-                <a href="javascript:;">
+                <a href="loca.html">
                     <img class="mui-media-object mui-pull-left" src="../img/btn_01.png">
                     <div class="mui-media-body" id="font_title">
                         最近播放
@@ -43,7 +44,7 @@
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media" id="form">                       
-                <a href="javascript:;">
+                <a href="loca.html">
                     <img class="mui-media-object mui-pull-left" src="../img/btn_02.png">
                     <div class="mui-media-body" id="font_title">
                         我的下载  
@@ -57,7 +58,7 @@
                     <span class="head_title">自建歌单</span>
                     <h5 class="mui-icon mui-icon-plusempty head_title_right">&nbsp新建</h5>
                 </div>
-                <a href="javascript:;">
+                <a href="loca.html">
                     <img class="mui-media-object mui-pull-left" src="../img/btn_04.png">
                     <div class="mui-media-body" id="font_title_1">
                         我喜欢单曲 
@@ -93,9 +94,14 @@
         </div>
         <!-- /底部内容 -->
     </div>
-<script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+
 <script type="text/javascript">
-mui.init()
+mui(document).on('tap', 'a', function() {
+    var a = document.createElement('a');
+    a = this.cloneNode(true);
+    a.click();
+})
+mui.init();
 </script>
 </body>
 </html>
